@@ -1,0 +1,1 @@
+C:\Users\ricci\source\repos\NET_MAUI_ProductStoreDemo\MAUIPostFeed\MAUIPostFeed.csproj;x64

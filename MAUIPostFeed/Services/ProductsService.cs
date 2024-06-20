@@ -14,7 +14,7 @@ public class ProductsService: IProductsRepository
     public ObservableCollection<Product> Products { get; set; }
 
     private static string BASE_URL { get; set; } = "https://dummyjson.com/";
-
+   
     public ProductsService()
     {
         client = new HttpClient();

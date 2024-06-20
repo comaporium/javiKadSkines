@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUIPostFeed.Views.ProductDetails"
-             Title="Product Details"
+             Title="Detalji o proizvodu"
              >
     <ScrollView BackgroundColor="#eee"  >
         <VerticalStackLayout>
@@ -24,7 +24,7 @@
                 <Label Text="{Binding product.description}" FontSize="Body" FontFamily="OpenSansRegular" />
                 <Grid ColumnDefinitions="*,*" ColumnSpacing="30" Margin="0, 10" >
                     <HorizontalStackLayout>
-                        <Label Text="💵  $" FontSize="30" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
+                        <Label Text="💵  KM" FontSize="30" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
                         <Label Text="{Binding product.price}" FontSize="40" FontFamily="OpenSansRegular" />
                     </HorizontalStackLayout>
                     <HorizontalStackLayout Grid.Column="1">
@@ -33,16 +33,16 @@
                     </HorizontalStackLayout>
                 </Grid>
                 <HorizontalStackLayout>
-                    <Label Text="Stocks left: " FontSize="20" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
+                    <Label Text="Stanje: " FontSize="20" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
                     <Label Text="{Binding product.stock}" FontSize="30" FontFamily="OpenSansRegular" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Label Text="Brand: " FontSize="20" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
+                    <Label Text="Proizvođač: " FontSize="20" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
                     <Label Text="{Binding product.brand}" FontSize="30" FontFamily="OpenSansRegular" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Label Text="Category: " FontSize="20" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
-                    <Label Text="{Binding product.category}" TextTransform="Uppercase" FontSize="30" FontFamily="OpenSansRegular" />
+                    <Label Text="Kategorija: " FontSize="20" VerticalTextAlignment="Center" FontFamily="OpenSansRegular" />
+                    <Label Text="{Binding product.category}" FontSize="30" FontFamily="OpenSansRegular" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </VerticalStackLayout>
