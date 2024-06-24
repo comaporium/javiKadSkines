@@ -18,10 +18,3 @@ public class Product
     public List<string> images { get; set; }
 }
 
-public class Products
-{
-    public ObservableCollection<Product> products { get; set; }
-    public int total { get; set; }
-    public int skip { get; set; }
-    public int limit { get; set; }
-}

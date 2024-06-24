@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUIPostFeed.Resources.Sty
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/ricci/source/repos/NET_MAUI_ProductStoreDemo/MAUIPostFeed/Views/ProductCategory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUIPostFeed.Views.ProductCategory.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductCategory.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductCategory.xaml
+
 [C:/Users/ricci/source/repos/NET_MAUI_ProductStoreDemo/MAUIPostFeed/Views/ProductDetails.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUIPostFeed.Views.ProductDetails.xaml

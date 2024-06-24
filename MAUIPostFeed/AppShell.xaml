@@ -7,8 +7,8 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Products"
-        ContentTemplate="{DataTemplate views:ProductList}"
+        Title="Proizvodi"
+        ContentTemplate="{DataTemplate views:ProductCategory}"
      />
 
 </Shell>

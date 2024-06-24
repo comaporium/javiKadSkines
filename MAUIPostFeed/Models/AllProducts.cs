@@ -1,28 +1,17 @@
 ﻿using System.Collections.ObjectModel;
-using MAUIPostFeed.Services;
 
 namespace MAUIPostFeed.Models
 {
     public class AllProducts
     {
         public ObservableCollection<Product> Products { get; set; } = new ObservableCollection<Product>();
-        readonly IProductsRepository ProductsRepository = new ProductsService();
 
-        public AllProducts() =>
-            LoadProducts();
+        public AllProducts(string category) =>
+            LoadProducts(category);
 
-        //public async void LoadProducts()
-        //{
-        //    ObservableCollection<Product> temp = await ProductsRepository.LoadProducts();
-        //    for (int i = 0; i < temp.Count; i++)
-        //    {
-        //        Products.Add(temp[i]);
-        //    }
-        //}
-
-        public async void LoadProducts()
+        public void LoadProducts(string category)
         {
-            ObservableCollection<Product> temp = new ObservableCollection<Product>
+            ObservableCollection<Product> products = new ObservableCollection<Product>
             {
                 new Product
                 {
@@ -209,9 +198,11 @@ namespace MAUIPostFeed.Models
                 }
             };
 
-            for (int i = 0; i < temp.Count; i++)
+            var productsToShow = category.Equals("Svi uređaji") ? products.ToList() : products.Where(x => x.category.Equals(category)).ToList();
+
+            for (int i = 0; i < productsToShow.Count(); i++)
             {
-                Products.Add(temp[i]);
+                Products.Add(productsToShow[i]);
             }
         }
     }

@@ -58,11 +58,12 @@
 	  <None Remove="Views\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Models\" />
 	  <Folder Include="Services\" />
-	  <Folder Include="Views\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="Views\ProductCategory.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ProductDetails.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
