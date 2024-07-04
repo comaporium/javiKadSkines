@@ -7,9 +7,9 @@ namespace MAUIPostFeed.Models
         public ObservableCollection<Category> Categories { get; set; } = new ObservableCollection<Category>();
 
         public AllCategories() =>
-            LoadProducts();
+            LoadCategories();
 
-        public void LoadProducts()
+        public void LoadCategories()
         {
             ObservableCollection<Category> categories = new ObservableCollection<Category>
             {

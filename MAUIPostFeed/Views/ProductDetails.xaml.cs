@@ -18,6 +18,5 @@ public partial class ProductDetails : ContentPage, IQueryAttributable, INotifyPr
 	{
 		InitializeComponent();
 		BindingContext = this;
-		Console.WriteLine("product inside details:" + product + "BINDINGCONTEXT::" + BindingContext);
 	}
 }
